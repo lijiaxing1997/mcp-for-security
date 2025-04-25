@@ -49,7 +49,7 @@ A server implementation that wraps the SQLmap SQL injection testing tool, allowi
 
 #### Usage
 ```bash
-sqlmap-mcp <sqlmap binary or python3 sqlmap>
+python3 sqlmap_mcp.py /you/path/sqlmap/sqlmap.py
 ```
 
 
@@ -57,10 +57,10 @@ sqlmap-mcp <sqlmap binary or python3 sqlmap>
 
 ```json
  "sqlmap": {
-      "command": "node",
+      "command": "python3",
       "args": [
-        "/path/to/build/index.js",
-        "sqlmap"
+        "/path/to/sqlmap_mcp.py",
+        "/you/path/sqlmap/sqlmap.py"
       ]
     }
 ```
